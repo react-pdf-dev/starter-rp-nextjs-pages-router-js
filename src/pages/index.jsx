@@ -1,5 +1,4 @@
 import { LazyAppPdfViewer } from "@/components/LazyAppPdfViewer";
-
 export default function Home() {
   return (
     <div className="w-[1028px] h-[700px] mx-auto">

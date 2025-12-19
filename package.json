@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@pdf-viewer/react": "latest",
-    "next": "16.0.7",
+    "next": "15.5.9",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
