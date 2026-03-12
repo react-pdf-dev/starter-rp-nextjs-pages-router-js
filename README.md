@@ -1,8 +1,8 @@
-# React PDF Starter Toolkit in Next.js with Pages Router and JavaScript
+# React PDF Kit Starter Toolkit in Next.js with Pages Router and JavaScript
 
-[![Open example in codesandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/react-pdf-dev/starter-rp-nextjs-pages-router-js/main)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github.com/react-pdf-kit/starter-rp-nextjs-pages-router-js)
 
-Welcome to the React PDF Starter Toolkit! This repository provides a comprehensive guide on integrating React PDF with Nextjs with Pages Router and JavaScript. It showcases how React PDF can be integrated and rendered as part of a Next.js project.
+Welcome to the React PDF Kit Starter Toolkit! This repository provides a comprehensive guide on integrating React PDF with Nextjs with Pages Router and JavaScript. It showcases the React PDF Viewer component can be integrated and rendered as part of a Next.js project.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ Welcome to the React PDF Starter Toolkit! This repository provides a comprehensi
 1. **Clone the Repository**: If you haven't already, clone the repository and navigate into the project directory.
 
    ```bash
-   git clone https://github.com/react-pdf-dev/starter-rp-nextjs-pages-router-js
+   git clone https://github.com/react-pdf-kit/starter-rp-nextjs-pages-router-js.git
    cd starter-rp-nextjs-pages-router-js
    ```
 
@@ -36,7 +36,7 @@ Welcome to the React PDF Starter Toolkit! This repository provides a comprehensi
 
 ### Running the Example Project
 
-This repository includes an example project to demonstrate React PDF in action.
+This repository includes an example project to demonstrate the React PDF Kit in action.
 
 1. **Start the Development Server**: Use the following command to start the development server
 
@@ -61,9 +61,9 @@ This example uses the Next.js Pages Router, which requires marking your PDF comp
 ```jsx
 import {
   RPProvider,
-  RPDefaultLayout,
+  RPLayout,
   RPPages,
-} from "@pdf-viewer/react";
+} from "@react-pdf-kit/viewer";
 
 const AppPdfViewer = (props) => {
   const { showToolbar = true, providerProps, defaultLayoutProps } = props;
@@ -74,9 +74,9 @@ const AppPdfViewer = (props) => {
       {...providerProps}
     >
       {showToolbar ? (
-        <RPDefaultLayout {...defaultLayoutProps}>
+        <RPLayout toolbar {...defaultLayoutProps}>
           <RPPages />
-        </RPDefaultLayout>
+        </RPLayout>
       ) : (
         <div style={{ width: "100%", height: "550px" }}>
           <RPPages />
@@ -93,7 +93,7 @@ export default AppPdfViewer;
 
 ```jsx
 "use client";
-import { RPConfig } from "@pdf-viewer/react";
+import { RPConfig } from "@react-pdf-kit/viewer";
 
 function AppProviders({
   children,
@@ -155,7 +155,7 @@ import { LazyAppPdfViewer } from "@/components/LazyAppPdfViewer";
 export default function Home() {
   return (
     <div className="w-[1028px] h-[700px] mx-auto">
-      <h1>RP Starter Toolkit: Nextjs + Javascript</h1>
+      <h1>React PDF Kit Starter Toolkit in Next.js with Pages Router and JavaScript</h1>
       <br />
       <h2>Default Toolbar</h2>
       <LazyAppPdfViewer />
@@ -178,12 +178,12 @@ For more examples, please refer to the `src/pages/index.jsx` file in this reposi
 
 _Remark: If you would like more examples, feel free open an issue._
 
-For more configurations, please check the [documentation](https://docs.react-pdf.dev) site.
+For more configurations, please check the [documentation](https://docs.react-pdf-kit.dev) site.
 
 ## Meta
-- Homepage: [https://www.react-pdf.dev](https://www.react-pdf.dev)
-- Docs: [https://docs.react-pdf.dev](https://docs.react-pdf.dev)
+- Homepage: [https://www.react-pdf-kit.dev](https://www.react-pdf-kit.dev)
+- Docs: [https://docs.react-pdf-kit.dev](https://docs.react-pdf-kit.dev)
 
 ---
 
-Thank you for using React PDF! We hope this toolkit helps you build amazing Next.js applications. If you have any questions or need further assistance on this example, please feel free to open an issue. Happy coding!
+Thank you for using React PDF Kit! We hope this toolkit helps you build amazing Next.js applications. If you have any questions or need further assistance on this example, please feel free to open an issue. Happy coding!

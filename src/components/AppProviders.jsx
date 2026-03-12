@@ -1,5 +1,5 @@
 "use client";
-import { RPConfig } from "@pdf-viewer/react";
+import { RPConfig } from "@react-pdf-kit/viewer";
 
 function AppProviders({
   children,
